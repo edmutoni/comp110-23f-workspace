@@ -1,12 +1,15 @@
 """EX01 - Chardle - A cute step toward Wordle."""
-_author_ = "730670385"
+__author__ = "730670385"
 
 indices: int = 0
 user_word: str = input("Enter a 5-character word: ")
 if len(user_word) != 5:
-    print("Word must conatin 5 characters")
+    print("Word must contain 5 characters")
     exit()
 user_letter: str = input("Enter a single character: ")
+if len(user_letter) != 1:
+    print("Error: Character must be a single character.")
+    exit()
 print("Searching for " + user_letter + " in " + user_word)                
 if user_letter == user_word[0]:
     print(user_letter + " found at index 0")
@@ -23,4 +26,7 @@ if user_letter == user_word[3]:
 if user_letter == user_word[4]:
     print(user_letter + " found at index 4")
     indices = indices + 1
-print(str(indices) + " instances of " + user_letter + " found in " + user_word)
+if indices > 0:
+    print(str(indices) + " instance of " + user_letter + " found in " + user_word)
+else: 
+    print("No instances of " + user_letter + " found in " + user_word)
