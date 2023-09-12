@@ -4,7 +4,7 @@ __author__ = "730670385"
 indices: int = 0
 user_word: str = input("Enter a 5-character word: ")
 if len(user_word) != 5:
-    print("Word must contain 5 characters")
+    print("Error: Word must contain 5 characters")
     exit()
 user_letter: str = input("Enter a single character: ")
 if len(user_letter) != 1:
@@ -27,6 +27,6 @@ if user_letter == user_word[4]:
     print(user_letter + " found at index 4")
     indices = indices + 1
 if indices > 0:
-    print(str(indices) + " instance of " + user_letter + " found in " + user_word)
+    print(str(indices) + " instances of " + user_letter + " found in " + user_word)
 else: 
     print("No instances of " + user_letter + " found in " + user_word)
