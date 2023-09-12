@@ -26,10 +26,9 @@ if user_letter == user_word[3]:
 if user_letter == user_word[4]:
     print(user_letter + " found at index 4")
     indices = indices + 1
-if indices == 1:
-    print("1 instance of " + user_letter + " found in " + user_word)
-    exit()
 if indices > 1:
     print(str(indices) + " instances of " + user_letter + " found in " + user_word)
-else: 
+if indices == 1:
+    print("1 instance of " + user_letter + " found in " + user_word)
+if indices == 0: 
     print("No instances of " + user_letter + " found in " + user_word)
