@@ -1,0 +1,1 @@
+"""Order of boolean values: not, and, or"""
