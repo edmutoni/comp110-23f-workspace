@@ -22,7 +22,3 @@ print(emoji)
 course: int = 110
 print(f"I am in COMP{course} right now!")
 #oh this is so much easier
-
-age: int = 21
-msg: str f"you are {age}!"
-print(msg)
