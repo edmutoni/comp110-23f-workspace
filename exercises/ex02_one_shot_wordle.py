@@ -1,5 +1,5 @@
 """One Shot Wordle"""
-__author__ = "930690385"
+__author__ = "730670385"
 
 secret_word: str = "python"
 secret_length: int = len(secret_word)
@@ -20,7 +20,7 @@ while len(user_word) != secret_length:
 if user_word == secret_word:
     print("Woo! You got it!")
 else:
-    print("Not quite. Try again soon!")
+    print("Not quite. Play again soon!")
 
 while user_index < secret_length:
     if user_word[user_index] == secret_word[secret_index]:
