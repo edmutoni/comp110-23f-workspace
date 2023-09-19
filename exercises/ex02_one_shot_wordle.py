@@ -31,9 +31,9 @@ while user_index < secret_length:
                 letter_check = True 
             else:
                 secret_indice = secret_indice + 1
+                letter_check = False
         if letter_check == True:
             wordle_boxes = wordle_boxes + YELLOW_BOX
-            letter_check = False
         else:
             wordle_boxes = wordle_boxes + WHITE_BOX
     secret_index = secret_index + 1
