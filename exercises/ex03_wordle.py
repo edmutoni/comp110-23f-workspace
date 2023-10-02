@@ -1,6 +1,7 @@
 """Structured Wordle."""
 __author__ = "730670385"
 
+
 def main() -> None:
     """The entrypoint of the program and the main game loop."""
     user_turns: int = 1
@@ -52,6 +53,7 @@ def emojified(user_guess: str, secret_word: str) -> str:
         secret_indice += 1
     return wordle_boxes
 
+
 def input_guess(expected_length: int) -> str:
     """Given a user input, checks that input with length of secret word. Returns user word of correct length."""
     user_word: str = input(f"Enter a {expected_length} character word: ")
@@ -59,8 +61,9 @@ def input_guess(expected_length: int) -> str:
         return user_word
     else:
         while len(user_word) != expected_length:
-            user_word = input(f"That was not {expected_length} chars! Try Again: ")
+            user_word = input(f"That wasn't {expected_length} chars! Try Again: ")
         return user_word
-
+    
+    
 if __name__ == "__main__":
     main()
